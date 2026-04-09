@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Valley School</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-blue-700 text-white sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <h1 class="text-xl font-bold">Green Valley School</h1>
+
+                <div class="hidden md:flex space-x-6">
+                    <a href="#" class="hover:text-yellow-300">Home</a>
+                    <a href="about.html" class="hover:text-yellow-300">About</a>
+                    <a href="courses.html" class="hover:text-yellow-300">Academics</a>
+                    <a href="gallery.html" class="hover:text-yellow-300">Gallery</a>
+                    <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+                </div>
+
+                <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="hidden md:hidden px-4 pb-4 bg-blue-700">
+            <a href="#" class="block py-2">Home</a>
+            <a href="#" class="block py-2">About</a>
+            <a href="#" class="block py-2">Academics</a>
+            <a href="#" class="block py-2">Gallery</a>
+            <a href="#" class="block py-2">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-100 py-20">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+            <div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    Best School For Your Child
+                </h2>
+
+                <p class="text-lg mb-6">
+                    Providing quality education, smart classes, sports and modern
+                    learning.
+                </p>
+
+                <div class="space-x-4">
+                    <button class="bg-blue-700 text-white px-6 py-3 rounded-lg">
+                        Admission Open
+                    </button>
+
+                    <button class="border border-blue-700 px-6 py-3 rounded-lg">
+                        Explore School
+                    </button>
+                </div>
+            </div>
+
+            <img src="https://images.unsplash.com/photo-1588072432836-e10032774350" class="rounded-xl shadow-lg" />
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="py-14 bg-white">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-8 text-center">
+            <div>
+                <h2 class="text-3xl font-bold text-blue-700">1500+</h2>
+                <p>Students</p>
+            </div>
+
+            <div>
+                <h2 class="text-3xl font-bold text-blue-700">50+</h2>
+                <p>Teachers</p>
+            </div>
+
+            <div>
+                <h2 class="text-3xl font-bold text-blue-700">25+</h2>
+                <p>Classrooms</p>
+            </div>
+
+            <div>
+                <h2 class="text-3xl font-bold text-blue-700">20+</h2>
+                <p>Awards</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7" class="rounded-xl shadow" />
+
+            <div>
+                <h2 class="text-3xl font-bold mb-4">About Our School</h2>
+                <p class="text-gray-600 mb-4">
+                    Our school focuses on overall development of students with modern
+                    education, discipline and activities.
+                </p>
+
+                <p class="text-gray-600">
+                    We provide smart classes, experienced teachers, and sports
+                    facilities.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities -->
+    <section class="bg-gray-100 py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-14">
+                Our Facilities
+            </h2>
+
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- Facility -->
+                <div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition text-center">
+                    <div class="text-4xl mb-4">📚</div>
+                    <h3 class="font-bold text-lg mb-2">Library</h3>
+                    <p class="text-gray-500 text-sm">
+                        Large collection of books for students learning.
+                    </p>
+                </div>
+
+                <!-- Facility -->
+                <div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition text-center">
+                    <div class="text-4xl mb-4">💻</div>
+                    <h3 class="font-bold text-lg mb-2">Computer Lab</h3>
+                    <p class="text-gray-500 text-sm">
+                        Modern computers with latest technology.
+                    </p>
+                </div>
+
+                <!-- Facility -->
+                <div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition text-center">
+                    <div class="text-4xl mb-4">🏀</div>
+                    <h3 class="font-bold text-lg mb-2">Sports Ground</h3>
+                    <p class="text-gray-500 text-sm">
+                        Indoor and outdoor sports activities.
+                    </p>
+                </div>
+
+                <!-- Facility -->
+                <div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition text-center">
+                    <div class="text-4xl mb-4">📊</div>
+                    <h3 class="font-bold text-lg mb-2">Smart Classes</h3>
+                    <p class="text-gray-500 text-sm">
+                        Digital classrooms with smart boards.
+                    </p>
+                </div>
+
+                <!-- Extra Facility -->
+                <div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition text-center">
+                    <div class="text-4xl mb-4">🚌</div>
+                    <h3 class="font-bold text-lg mb-2">Transport</h3>
+                    <p class="text-gray-500 text-sm">
+                        Safe and secure bus facility for students.
+                    </p>
+                </div>
+
+                <!-- Extra Facility -->
+                <div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition text-center">
+                    <div class="text-4xl mb-4">🎨</div>
+                    <h3 class="font-bold text-lg mb-2">Art & Activities</h3>
+                    <p class="text-gray-500 text-sm">
+                        Creative learning and extracurricular activities.
+                    </p>
+                </div>
+
+                <!-- Extra Facility -->
+                <div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition text-center">
+                    <div class="text-4xl mb-4">🧪</div>
+                    <h3 class="font-bold text-lg mb-2">Science Lab</h3>
+                    <p class="text-gray-500 text-sm">
+                        Fully equipped science laboratories.
+                    </p>
+                </div>
+
+                <!-- Extra Facility -->
+                <div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition text-center">
+                    <div class="text-4xl mb-4">🏫</div>
+                    <h3 class="font-bold text-lg mb-2">Modern Campus</h3>
+                    <p class="text-gray-500 text-sm">
+                        Clean and safe environment for students.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+                <!-- Notice Board -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold">Latest Notices</h2>
+                <button class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700">
+                    View All
+                </button>
+            </div>
+
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <!-- Notice -->
+                <div class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden">
+                    <div class="bg-blue-600 text-white px-5 py-3 flex justify-between">
+                        <span class="font-semibold">Admission</span>
+                        <span>12 Apr 2026</span>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">Admission Open 2026</h3>
+                        <p class="text-gray-500 mb-4">
+                            Apply now for the new academic session.
+                        </p>
+
+                        <a href="#" class="text-blue-600 font-semibold hover:underline">
+                            Read More →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Notice -->
+                <div class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden">
+                    <div class="bg-green-600 text-white px-5 py-3 flex justify-between">
+                        <span class="font-semibold">Exam</span>
+                        <span>18 Apr 2026</span>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">Final Exam Schedule</h3>
+                        <p class="text-gray-500 mb-4">
+                            The final exam timetable has been released.
+                        </p>
+
+                        <a href="#" class="text-blue-600 font-semibold hover:underline">
+                            Read More →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Notice -->
+                <div class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden">
+                    <div class="bg-purple-600 text-white px-5 py-3 flex justify-between">
+                        <span class="font-semibold">Event</span>
+                        <span>25 Apr 2026</span>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">Annual Function</h3>
+                        <p class="text-gray-500 mb-4">
+                            Annual cultural event will be held next month.
+                        </p>
+
+                        <a href="#" class="text-blue-600 font-semibold hover:underline">
+                            Read More →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toppers Section -->
+    <section class="bg-gray-100 py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-14">
+                Our School Toppers
+            </h2>
+
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- Student -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36"
+                            class="w-full h-64 object-cover" />
+                        <span
+                            class="absolute top-3 left-3 bg-yellow-400 text-black px-3 py-1 rounded-full text-sm font-semibold">
+                            Rank 1
+                        </span>
+                    </div>
+
+                    <div class="p-5 text-center">
+                        <h3 class="text-lg font-bold">Rahul Sharma</h3>
+                        <p class="text-gray-500">Class 12</p>
+                        <p class="text-blue-600 font-semibold text-lg mt-1">95%</p>
+                    </div>
+                </div>
+
+                <!-- Student -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2"
+                            class="w-full h-64 object-cover" />
+                        <span class="absolute top-3 left-3 bg-gray-200 px-3 py-1 rounded-full text-sm font-semibold">
+                            Rank 2
+                        </span>
+                    </div>
+
+                    <div class="p-5 text-center">
+                        <h3 class="text-lg font-bold">Priya Singh</h3>
+                        <p class="text-gray-500">Class 12</p>
+                        <p class="text-blue-600 font-semibold text-lg mt-1">94%</p>
+                    </div>
+                </div>
+
+                <!-- Student -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a"
+                            class="w-full h-64 object-cover" />
+                        <span class="absolute top-3 left-3 bg-gray-200 px-3 py-1 rounded-full text-sm font-semibold">
+                            Rank 3
+                        </span>
+                    </div>
+
+                    <div class="p-5 text-center">
+                        <h3 class="text-lg font-bold">Aman Verma</h3>
+                        <p class="text-gray-500">Class 12</p>
+                        <p class="text-blue-600 font-semibold text-lg mt-1">93%</p>
+                    </div>
+                </div>
+
+                <!-- Student -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce"
+                            class="w-full h-64 object-cover" />
+                        <span class="absolute top-3 left-3 bg-gray-200 px-3 py-1 rounded-full text-sm font-semibold">
+                            Topper
+                        </span>
+                    </div>
+
+                    <div class="p-5 text-center">
+                        <h3 class="text-lg font-bold">Sneha Patel</h3>
+                        <p class="text-gray-500">Class 10</p>
+                        <p class="text-blue-600 font-semibold text-lg mt-1">92%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-blue-700 text-white py-16 text-center">
+        <h2 class="text-3xl font-bold mb-4">Admission Open 2026</h2>
+
+        <p class="mb-6">Enroll your child today for a bright future.</p>
+
+        <button class="bg-white text-blue-700 px-6 py-3 rounded-lg">
+            Apply Now
+        </button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 pt-12 pb-6">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-10">
+            <!-- School Info -->
+            <div>
+                <h2 class="text-white text-xl font-bold mb-4">Green Valley School</h2>
+                <p class="text-sm leading-6">
+                    Providing quality education with modern technology, smart classes,
+                    sports activities and experienced teachers for overall development
+                    of students.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-white">Home</a></li>
+                    <li><a href="#" class="hover:text-white">About Us</a></li>
+                    <li><a href="#" class="hover:text-white">Academics</a></li>
+                    <li><a href="#" class="hover:text-white">Gallery</a></li>
+                    <li><a href="#" class="hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Important Links -->
+            <div>
+                <h3 class="text-white font-semibold mb-4">Academics</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-white">Admission</a></li>
+                    <li><a href="#" class="hover:text-white">Notice Board</a></li>
+                    <li><a href="#" class="hover:text-white">Exam Schedule</a></li>
+                    <li><a href="#" class="hover:text-white">School Events</a></li>
+                    <li><a href="#" class="hover:text-white">Student Portal</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-white font-semibold mb-4">Contact Us</h3>
+                <p class="mb-2">📍 Bhopal, Madhya Pradesh</p>
+                <p class="mb-2">📞 +91 9876543210</p>
+                <p class="mb-4">✉ info@school.com</p>
+
+                <!-- Social Media -->
+                <div class="flex space-x-4">
+                    <a href="#" class="bg-gray-700 px-3 py-2 rounded hover:bg-blue-600">FB</a>
+                    <a href="#" class="bg-gray-700 px-3 py-2 rounded hover:bg-blue-400">TW</a>
+                    <a href="#" class="bg-gray-700 px-3 py-2 rounded hover:bg-pink-500">IG</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="border-t border-gray-700 mt-10 pt-4 text-center text-sm">
+            © 2026 Green Valley School. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
